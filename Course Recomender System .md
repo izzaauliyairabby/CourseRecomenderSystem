@@ -1,8 +1,8 @@
-# MLT Proyek Kedua | Coursera Courses Recommendation System
+# Courses Recommendation System
 
-###### Disusun oleh : Niko Febrianur
+###### Disusun oleh : Izza Auliyai Rabby
 
-Ini adalah proyek kedua, membuat sistem rekomendasi untuk memenuhi submission Dicoding Kelas *machine learning* Terapan. 
+Ini adalah proyek kedua, yang bertujuan untuk membuat sistem rekomendasi sebagai bagian dari pengumpulan tugas untuk kelas Machine Learning Terapan di Dicoding.
 
 Proyek ini membangun model *machine learning* yang dapat memberikan rekomendasi kursus Coursera kepada pengguna.
 
@@ -10,23 +10,23 @@ Proyek ini membangun model *machine learning* yang dapat memberikan rekomendasi 
 
 ### Latar belakang
 
-Domain proyek untuk sistem rekomendasi kursus Coursera ini adalah industri pembelajaran *online*. Di era digital saat ini, banyak individu mencari peluang untuk meningkatkan pengetahuan dan keterampilan mereka melalui platform pembelajaran *online*. 
+Domain proyek sistem rekomendasi ini adalah industri pembelajaran online. Di era digital saat ini, banyak orang yang mencari kesempatan untuk memperluas pengetahuan dan keterampilan mereka melalui platform pembelajaran **online**
 
-Coursera adalah salah satu platform populer yang menawarkan berbagai kursus dari universitas dan lembaga terkemuka di seluruh dunia.
+Coursera merupakan salah satu platform populer yang menyediakan berbagai kursus dari universitas dan lembaga terkemuka di seluruh dunia.
 
-Dalam domain ini, tantangan yang dihadapi adalah bagaimana menyediakan rekomendasi kursus yang relevan dan sesuai dengan minat, tujuan belajar, dan tingkat keahlian pengguna. 
+Dalam konteks ini, tantangan yang dihadapi adalah bagaimana memberikan rekomendasi kursus yang relevan, sesuai dengan minat, tujuan belajar, dan tingkat keahlian pengguna.
 
-Dalam konteks ini, model *machine learning* dapat memainkan peran penting dalam menganalisis data pengguna, seperti riwayat kursus yang telah diambil, preferensi pengguna, dan ulasan yang diberikan.
+Model machine learning dapat berperan penting dalam menganalisis data pengguna, seperti riwayat kursus yang telah diambil, preferensi individu, dan ulasan yang diberikan.
 
-Model *machine learning* dapat mempelajari pola dan hubungan antara pengguna dan kursus-kursus yang ada di Coursera. Dengan menggunakan teknik pengolahan bahasa alami (Natural Language Processing) dan teknik pembelajaran mesin lainnya, model dapat memahami teks deskripsi kursus, topik, dan keterkaitan antara kursus-kursus yang ada. 
+Model machine learning dapat mengidentifikasi pola dan hubungan antara pengguna dan kursus-kursus yang tersedia di Coursera. Dengan memanfaatkan teknik pengolahan bahasa alami (Natural Language Processing) dan metode pembelajaran mesin lainnya, model dapat memahami deskripsi kursus, topik yang dibahas, serta keterkaitan antara berbagai kursus.
 
-Model juga dapat menganalisis data pengguna, seperti preferensi, tingkat pemahaman, dan riwayat kursus, untuk memberikan rekomendasi yang personal dan relevan.
+Selain itu, model juga dapat menganalisis data pengguna, seperti preferensi, tingkat pemahaman, dan riwayat kursus yang telah diambil, untuk memberikan rekomendasi yang lebih personal dan relevan.
 
-Dengan menggunakan sistem rekomendasi ini, pengguna dapat menemukan kursus-kursus yang sesuai dengan minat dan kebutuhan mereka. Hal ini dapat membantu pengguna dalam meningkatkan pengetahuan, keterampilan, dan memperoleh sertifikat atau gelar dalam bidang yang diminati. 
+Dengan sistem rekomendasi ini, pengguna dapat menemukan kursus yang sesuai dengan minat dan kebutuhan mereka. Ini akan membantu mereka dalam meningkatkan pengetahuan, keterampilan, serta mendapatkan sertifikat atau gelar di bidang yang diminati.
 
-Sistem rekomendasi ini juga dapat membantu Coursera dalam meningkatkan pengalaman pengguna dan mempertahankan anggota dengan menyediakan rekomendasi yang akurat dan bermutu.
+Sistem rekomendasi ini juga dapat membantu Coursera dalam meningkatkan pengalaman pengguna dan mempertahankan anggota dengan menyediakan rekomendasi yang akurat dan berkualitas.
 
-Dengan membangun model *machine learning* untuk sistem rekomendasi kursus Coursera, diharapkan dapat memberikan manfaat bagi pengguna dan platform pembelajaran *online* dalam mempermudah proses pencarian kursus yang sesuai dengan minat dan kebutuhan individu.
+Dengan mengembangkan model machine learning untuk sistem rekomendasi kursus di Coursera, diharapkan dapat memberikan manfaat bagi pengguna serta platform pembelajaran online, sehingga mempermudah proses pencarian kursus yang sesuai dengan minat dan kebutuhan masing-masing individu.
 
 ## 2. Business Understanding
 
@@ -34,41 +34,42 @@ Dalam konteks proyek ini, pemahaman bisnis adalah memahami tujuan dan manfaat ya
 
 Berikut adalah beberapa poin penting dalam pemahaman bisnis proyek ini:
 
-1. Meningkatkan pengalaman pengguna: sistem rekomendasi kursus Coursera bertujuan untuk meningkatkan pengalaman pengguna dengan menyediakan rekomendasi yang personal dan relevan. Dengan menggunakan model *machine learning*, pengguna akan mendapatkan rekomendasi kursus yang sesuai dengan minat, tujuan belajar, dan tingkat keahlian mereka. Hal ini dapat membantu pengguna dalam menemukan kursus yang menarik dan sesuai dengan kebutuhan mereka.
+Meningkatkan pengalaman pengguna: Sistem rekomendasi kursus Coursera dirancang untuk meningkatkan pengalaman pengguna dengan menyediakan rekomendasi yang personal dan relevan. Dengan memanfaatkan model machine learning, pengguna akan menerima rekomendasi kursus yang sesuai dengan minat, tujuan belajar, dan tingkat keahlian mereka. Ini membantu pengguna menemukan kursus yang menarik dan sesuai dengan kebutuhan mereka.
 
-2. Meningkatkan retensi pengguna: dengan menyediakan rekomendasi yang akurat dan bermutu, sistem ini diharapkan dapat membantu Coursera dalam mempertahankan anggota. Pengguna yang mendapatkan rekomendasi yang relevan dan memberikan nilai tambah dalam perjalanan pembelajaran mereka cenderung tetap aktif dan terlibat dalam platform. Meningkatkan retensi pengguna adalah tujuan bisnis yang penting untuk menghasilkan pertumbuhan jangka panjang.
+Meningkatkan retensi pengguna: Dengan menawarkan rekomendasi yang akurat dan berkualitas, sistem ini diharapkan dapat membantu Coursera dalam mempertahankan anggota. Pengguna yang menerima rekomendasi relevan dan bermanfaat dalam proses pembelajaran mereka cenderung tetap aktif dan terlibat di platform. Meningkatkan retensi pengguna adalah tujuan bisnis yang krusial untuk mencapai pertumbuhan jangka panjang.
 
-3. Penyediaan kursus yang relevan: sistem rekomendasi ini juga memberikan manfaat kepada Coursera dalam hal penyediaan kursus yang relevan. Dengan menganalisis preferensi pengguna, keterampilan yang dibutuhkan dalam pasar, dan tren industri, Coursera dapat menggunakan hasil rekomendasi untuk memperbaiki kurikulum dan menawarkan kursus yang sesuai dengan permintaan pengguna.
+Penyediaan kursus yang relevan: Sistem rekomendasi ini juga memberikan keuntungan bagi Coursera dalam hal penyediaan kursus yang tepat. Dengan menganalisis preferensi pengguna, keterampilan yang dibutuhkan di pasar, dan tren industri, Coursera dapat memanfaatkan hasil rekomendasi untuk memperbaiki kurikulum dan menawarkan kursus yang sesuai dengan permintaan pengguna.
 
-4. Meningkatkan konversi dan pendapatan: sistem rekomendasi yang efektif dapat meningkatkan konversi, yaitu mengubah pengguna yang hanya menjelajahi platform menjadi peserta kursus yang berlangganan. Dengan memberikan rekomendasi yang menarik dan relevan, pengguna akan cenderung mendaftar dan membayar untuk kursus yang direkomendasikan. Hal ini dapat meningkatkan pendapatan Coursera dan mengoptimalkan model bisnis mereka.
+Meningkatkan konversi dan pendapatan: Sistem rekomendasi yang efektif dapat meningkatkan konversi, yakni mengubah pengguna yang hanya menjelajahi platform menjadi peserta kursus berbayar. Dengan memberikan rekomendasi yang menarik dan relevan, pengguna akan lebih cenderung untuk mendaftar dan membayar untuk kursus yang direkomendasikan. Ini dapat meningkatkan pendapatan Coursera dan mengoptimalkan model bisnis mereka.
 
-5. Analisis data dan pemahaman pengguna: dalam pengembangan sistem rekomendasi, analisis data pengguna menjadi komponen kunci. Dengan memahami pola perilaku pengguna, preferensi, dan riwayat kursus, Coursera dapat mendapatkan wawasan berharga tentang minat dan kebutuhan pengguna mereka. Analisis data juga membantu dalam mengukur efektivitas rekomendasi yang diberikan dan melakukan perbaikan yang diperlukan.
+Analisis data dan pemahaman pengguna: Dalam pengembangan sistem rekomendasi, analisis data pengguna menjadi elemen kunci. Dengan memahami pola perilaku, preferensi, dan riwayat kursus pengguna, Coursera dapat memperoleh wawasan berharga tentang minat dan kebutuhan mereka. Analisis data juga membantu dalam mengukur efektivitas rekomendasi yang diberikan dan melakukan perbaikan yang diperlukan.
 
-Dengan pemahaman bisnis yang kuat, pengembangan sistem rekomendasi kursus Coursera dapat fokus pada tujuan dan manfaat yang ingin dicapai. 
+Dengan pemahaman bisnis yang mendalam, pengembangan sistem rekomendasi kursus Coursera dapat lebih terfokus pada tujuan dan manfaat yang ingin dicapai.
 
-Dalam hal ini, meningkatkan pengalaman pengguna, retensi pengguna, penyediaan kursus yang relevan, meningkatkan konversi dan pendapatan, serta analisis data pengguna menjadi fokus utama dalam pengembangan dan evaluasi sistem rekomendasi ini.
+Dalam konteks ini, fokus utama dalam pengembangan dan evaluasi sistem rekomendasi ini adalah meningkatkan pengalaman pengguna, retensi pengguna, penyediaan kursus yang relevan, serta meningkatkan konversi dan pendapatan, serta analisis data pengguna.
 
 ## 3. Problem Statements
 
-Berdasarkan business understanding di atas, proyek ini akan berusaha menjawab pertanyaan pada masalah-masalah sebagai berikut:
+Berdasarkan pemahaman bisnis yang telah dijelaskan, proyek ini akan berupaya menjawab pertanyaan-pertanyaan terkait masalah berikut:
 
-1. Bagaimana mengembangkan sistem rekomendasi yang dapat memberikan pengalaman pengguna yang lebih baik dalam mencari dan memilih kursus di Coursera?
+Bagaimana cara mengembangkan sistem rekomendasi yang dapat meningkatkan pengalaman pengguna dalam mencari dan memilih kursus di Coursera?
 
-2. Bagaimana meningkatkan retensi pengguna dengan menyediakan rekomendasi kursus yang relevan dan menarik bagi pengguna Coursera?
+Bagaimana cara meningkatkan retensi pengguna dengan menyediakan rekomendasi kursus yang relevan dan menarik bagi pengguna Coursera?
 
-3. Bagaimana mengoptimalkan penyediaan kursus yang relevan dengan mengidentifikasi preferensi pengguna, keterampilan yang dibutuhkan dalam pasar, dan tren industri?
+Bagaimana cara mengoptimalkan penyediaan kursus yang sesuai dengan mengidentifikasi preferensi pengguna, keterampilan yang dibutuhkan di pasar, dan tren industri?
 
-4. Bagaimana meningkatkan konversi pengguna menjadi peserta kursus berbayar dengan menyediakan rekomendasi yang menarik dan memberikan nilai tambah?
+Bagaimana cara meningkatkan konversi pengguna menjadi peserta kursus berbayar dengan memberikan rekomendasi yang menarik dan memberikan nilai tambah?
 
-5. Bagaimana menganalisis data pengguna dengan efektif untuk memahami perilaku, preferensi, dan kebutuhan pengguna dalam konteks rekomendasi kursus?
+Bagaimana cara menganalisis data pengguna secara efektif untuk memahami perilaku, preferensi, dan kebutuhan pengguna dalam konteks rekomendasi kursus?
+
 
 Dengan memfokuskan diri pada pertanyaan-pertanyaan di atas, tujuan proyek ini akan menjadi lebih jelas dan memungkinkan pengembangan solusi yang efektif untuk memecahkan masalah yang ingin diselesaikan, yaitu meningkatkan pengalaman pengguna, retensi pengguna, penyediaan kursus yang relevan, konversi pengguna, dan analisis data pengguna.
 
 ## 4. Goals
 
-Proyek ini memiliki beberapa tujuan yang ingin dicapai dalam pengembangan sistem rekomendasi kursus Coursera yakni sebagai berikut:
+Proyek ini memiliki beberapa tujuan yang ingin dicapai dalam pengembangan sistem rekomendasi kursus Coursera, sebagai berikut:
 
-1. Meningkatkan pengalaman pengguna: tujuan utama adalah meningkatkan pengalaman pengguna dengan menyediakan rekomendasi kursus yang personal dan relevan. Hal ini akan membantu pengguna dalam menemukan kursus yang sesuai dengan minat, tujuan belajar, dan tingkat keahlian mereka. Pencapaian tujuan ini akan memberikan manfaat berupa kepuasan pengguna yang lebih tinggi, peningkatan keterlibatan, dan kemungkinan lebih tinggi bagi pengguna untuk menyelesaikan kursus yang mereka ikuti.
+1. Meningkatkan pengalaman pengguna: Tujuan utama adalah meningkatkan pengalaman pengguna dengan memberikan rekomendasi kursus yang personal dan relevan. Ini akan membantu pengguna menemukan kursus yang sesuai dengan minat, tujuan belajar, dan tingkat keahlian mereka. Dengan mencapai tujuan ini, diharapkan dapat meningkatkan kepuasan pengguna, meningkatkan keterlibatan, dan meningkatkan kemungkinan pengguna menyelesaikan kursus yang mereka ikuti.
 
 - Metrik evaluasi: 
   - Tingkat kepuasan pengguna: dilakukan survei atau pengukuran berdasarkan umpan balik pengguna terkait pengalaman mereka dalam menggunakan sistem rekomendasi. 
@@ -104,37 +105,35 @@ Hal ini akan membantu dalam mengidentifikasi kekuatan dan kelemahan sistem rekom
 
 ## 5. Solution Approach
 
-Tahapan untuk menyelesaikan tujuan dari proyek ini adalah sebagai berikut:
+Tahapan untuk mencapai tujuan proyek ini adalah sebagai berikut:
 
-1. Tahap EDA (Exploratory Data Analysis):
-   - Mengumpulkan data: Mengumpulkan data kursus Coursera, termasuk informasi kursus seperti judul, deskripsi, topik, ulasan pengguna, dan riwayat kursus pengguna.
-   - Melakukan pembersihan data: Membersihkan dan memformat data agar sesuai dengan kebutuhan analisis.
-   - Analisis data: Melakukan analisis eksploratori untuk memahami distribusi data, tren, dan pola yang ada. Ini meliputi pemahaman tentang preferensi kursus yang diambil pengguna, rating kursus, dan atribut keahlian yang relevan.
+Tahap EDA (Exploratory Data Analysis):
 
-2. Pendekatan Content-Based Filtering:
-   - Pembangunan fitur: Menggunakan teknik pengolahan bahasa alami (NLP) untuk menganalisis deskripsi kursus dan menghasilkan vektor fitur yang merepresentasikan konten kursus.
-   - Membangun model: Menggunakan algoritma seperti *TF-IDF* atau *Word Embeddings* untuk membangun model yang dapat mengukur kesamaan antara kursus berdasarkan fitur-fitur kontennya.
-   - Rekomendasi kursus: Menghitung kesamaan antara kursus yang ada dengan kursus yang diminati oleh pengguna berdasarkan kursus yang telah diambil dan atribut keahlian.
+Mengumpulkan data: Mengumpulkan data tentang kursus Coursera, termasuk informasi seperti judul, deskripsi, topik, ulasan pengguna, dan riwayat kursus yang diambil oleh pengguna.
+Pembersihan data: Membersihkan dan memformat data agar sesuai dengan kebutuhan analisis.
+Analisis data: Melakukan analisis eksploratori untuk memahami distribusi data, tren, dan pola yang ada, termasuk pemahaman mengenai preferensi kursus yang diambil pengguna, rating kursus, dan atribut keterampilan yang relevan.
+Pendekatan Content-Based Filtering:
 
-3. Pendekatan *Collaborative Filtering*:
-   - Matriks User-Item: Membangun matriks user-item yang merepresentasikan preferensi pengguna terhadap kursus-kursus yang ada.
-   - Membangun model: Menggunakan algoritma seperti *Singular Value Decomposition* (SVD) atau *Matrix Factorization* untuk membangun model yang dapat menemukan pola kolaboratif di antara kursus dan keahlian.
-   - Rekomendasi kursus: Membuat rekomendasi kursus berdasarkan peringkat prediksi yang diberikan oleh model.
+Pembangunan fitur: Menggunakan teknik pengolahan bahasa alami (NLP) untuk menganalisis deskripsi kursus dan menghasilkan vektor fitur yang merepresentasikan konten kursus.
+Membangun model: Menggunakan algoritma seperti TF-IDF atau Word Embeddings untuk membuat model yang dapat mengukur kesamaan antara kursus berdasarkan fitur-fitur kontennya.
+Rekomendasi kursus: Menghitung kesamaan antara kursus yang ada dengan kursus yang diminati pengguna, berdasarkan kursus yang telah diambil dan atribut keterampilan.
+Pendekatan Collaborative Filtering:
 
-4. Evaluasi Model:
-   - Evaluasi *Content-Based Filtering*: Menggunakan metrik *Precission* untuk mengukur sejauh mana rekomendasi kursus yang diberikan relevan dengan preferensi pengguna.
-   - Evaluasi *Collaborative Filtering*: Menggunakan metrik *Root Mean Square Error* (RMSE) untuk mengukur sejauh mana peringkat prediksi model mendekati peringkat yang sebenarnya.
+Matriks User-Item: Membangun matriks user-item yang merepresentasikan preferensi pengguna terhadap kursus yang tersedia.
+Membangun model: Menggunakan algoritma seperti Singular Value Decomposition (SVD) atau Matrix Factorization untuk mengidentifikasi pola kolaboratif antara kursus dan keterampilan.
+Rekomendasi kursus: Membuat rekomendasi kursus berdasarkan peringkat prediksi yang diberikan oleh model.
+Evaluasi Model:
 
-5. Perbaikan dan Penyesuaian Model:
-   - Menganalisis hasil evaluasi model dan melakukan perbaikan atau penyesuaian yang diperlukan untuk meningkatkan performa dan akurasi rekomendasi.
+Evaluasi Content-Based Filtering: Menggunakan metrik Precision untuk mengukur relevansi rekomendasi kursus dengan preferensi pengguna.
+Evaluasi Collaborative Filtering: Menggunakan metrik Root Mean Square Error (RMSE) untuk menilai seberapa dekat peringkat prediksi model dengan peringkat aktual.
+Perbaikan dan Penyesuaian Model:
 
-Dengan pendekatan ini, fitur-fitur konten kursus (Content-Based Filtering) akan dimanfaatkan serta pola kolaboratif antara pengguna dan kursus (Collaborative Filtering) untuk memberikan rekomendasi kursus yang relevan kepada pengguna. 
-
-Evaluasi menggunakan metrik *Precission* dan *RMSE* akan memberikan wawasan tentang sejauh mana performa model dalam memberikan rekomendasi yang tepat.
+Menganalisis hasil evaluasi model dan melakukan perbaikan atau penyesuaian yang diperlukan untuk meningkatkan performa dan akurasi rekomendasi.
+Dengan pendekatan ini, fitur-fitur konten kursus (Content-Based Filtering) dan pola kolaboratif antara pengguna dan kursus (Collaborative Filtering) akan digunakan untuk memberikan rekomendasi kursus yang relevan. Evaluasi menggunakan metrik Precision dan RMSE akan memberikan wawasan tentang performa model dalam memberikan rekomendasi yang tepat.
 
 ## 6. Data Understanding
 
-Kumpulan data ini dihapus dari informasi yang tersedia untuk umum di situs web Coursera pada september 2021 dan dimasukkan secara manual jika data dihapus dengan tidak benar. 
+Kumpulan data ini diambil dari informasi yang tersedia untuk umum di situs web Coursera pada September 2021 dan dimasukkan secara manual jika terdapat data yang dihapus dengan tidak tepat. 
 
 Dataset dapat diunduh di: [Coursera courses dataset 2021](https://www.Kaggle.Com/datasets/khusheekapoor/Coursera-courses-dataset-2021).
 
@@ -190,13 +189,13 @@ dtypes: object(7)
 
 Berikut adalah tahapan-tahapan yang dilakukan:
 
-1. Drop outliers menggunakan IQR: Mengidentifikasi dan menghapus *outlier* pada dataset menggunakan metode IQR (Interquartile Range).
-2. Mengatasi missing value: Melakukan penanganan terhadap nilai yang hilang pada dataset, seperti menghapus baris atau mengisi nilai yang hilang dengan metode tertentu, seperti mean atau median.
-3. Mengambil kolom yang diperlukan dan merubah nama kolom: Memilih kolom-kolom yang relevan untuk analisis dan memberikan nama baru jika diperlukan.
-4. Exclude rating yang ingin dihapus dari dataset: Menghapus data dengan rating tertentu yang ingin dikecualikan dari analisis.
-5. Reset index dataframe untuk menghindari error: Mereset indeks dataframe setelah melakukan operasi penghapusan atau pemrosesan data agar indeks kembali terurut secara berurutan.
-6. Convert "rating" column to int64 data type: Mengubah tipe data kolom "rating" menjadi tipe data int64 untuk mempermudah analisis numerik.
-7. Mendapatkan list unik kolom kursus dan keahlian: Mengidentifikasi dan mendapatkan daftar unik kolom "courseName" dan "skills" dalam dataset.
+Menghapus outlier menggunakan IQR: Mengidentifikasi dan menghapus outlier pada dataset dengan metode IQR (Interquartile Range).
+Menangani nilai yang hilang: Melakukan penanganan terhadap missing value dalam dataset, baik dengan menghapus baris atau mengisi nilai yang hilang menggunakan metode tertentu, seperti mean atau median.
+Memilih kolom yang relevan dan mengubah nama kolom: Memilih kolom-kolom yang penting untuk analisis dan memberikan nama baru jika diperlukan.
+Mengecualikan rating tertentu dari dataset: Menghapus data dengan rating tertentu yang ingin dikecualikan dari analisis.
+Mereset indeks dataframe untuk menghindari error: Mereset indeks dataframe setelah melakukan penghapusan atau pemrosesan data agar indeks kembali terurut dengan benar.
+Mengubah tipe data kolom "rating" menjadi int64: Mengubah tipe data kolom "rating" menjadi tipe data int64 untuk mempermudah analisis numerik.
+Mendapatkan daftar unik untuk kolom kursus dan keterampilan: Mengidentifikasi dan mendapatkan daftar unik dari kolom "courseName" dan "skills" dalam dataset.
 
 ## 8. Modeling
 
@@ -205,23 +204,21 @@ Pada proyek ini diterapkan 2 tipe model, yaitu *Content-Based Filtering* dan *Co
 ### *Content-Based Filtering*
 *Content-Based Filtering* adalah pendekatan dalam sistem rekomendasi yang mengandalkan analisis konten dari item yang direkomendasikan. 
 
-Dalam konteks sistem rekomendasi kursus Coursera, pendekatan ini akan menganalisis fitur-fitur konten dari kursus, seperti deskripsi kursus, topik, rating, atau keterampilan yang terkait, untuk memberikan rekomendasi yang relevan kepada pengguna.
+Dalam konteks sistem rekomendasi kursus Coursera, pendekatan ini akan menganalisis fitur-fitur konten dari kursus, seperti deskripsi, topik, rating, dan keterampilan terkait, untuk memberikan rekomendasi yang relevan kepada pengguna.
 
-Kelebihan *Content-Based Filtering*:
-1. Personalisasi: Pendekatan *Content-Based Filtering* memungkinkan personalisasi yang tinggi, karena rekomendasi didasarkan pada preferensi pengguna yang diungkapkan melalui analisis konten kursus.
-2. Tidak tergantung pada data pengguna lain: Pendekatan ini tidak memerlukan informasi tentang preferensi pengguna lain, sehingga tidak bergantung pada data kolaboratif atau historis dari pengguna lainnya.
-3. Memperhitungkan kepentingan unik pengguna: Pendekatan ini memperhitungkan preferensi pengguna yang spesifik dan tidak terpengaruh oleh tren atau preferensi umum.
-
-Kekurangan *Content-Based Filtering*:
-1. Terbatas pada fitur yang diamati: Pendekatan ini terbatas pada fitur-fitur yang diamati dan dianalisis dalam konten kursus. Rekomendasi mungkin kurang beragam jika tidak ada fitur yang signifikan dalam analisis konten yang dapat membedakan kursus secara signifikan.
-2. Tidak memperhitungkan preferensi baru: Pendekatan ini tidak secara otomatis menyesuaikan dengan perubahan preferensi pengguna. Jika preferensi pengguna berubah atau berkembang, rekomendasi mungkin tetap berfokus pada preferensi yang lebih lama.
-
+Kelebihan Content-Based Filtering:
+Personalisasi: Pendekatan Content-Based Filtering memungkinkan tingkat personalisasi yang tinggi, karena rekomendasi didasarkan pada preferensi pengguna yang diungkapkan melalui analisis konten kursus.
+Independensi dari data pengguna lain: Pendekatan ini tidak memerlukan informasi tentang preferensi pengguna lain, sehingga tidak tergantung pada data kolaboratif atau historis dari pengguna lain.
+Memperhitungkan kepentingan unik pengguna: Pendekatan ini mempertimbangkan preferensi spesifik pengguna dan tidak terpengaruh oleh tren atau preferensi umum.
+Kekurangan Content-Based Filtering:
+Terbatas pada fitur yang ada: Pendekatan ini terbatas pada fitur yang dapat diamati dan dianalisis dalam konten kursus. Rekomendasi mungkin kurang bervariasi jika tidak ada fitur signifikan yang membedakan kursus.
+Tidak responsif terhadap perubahan preferensi: Pendekatan ini tidak secara otomatis menyesuaikan dengan perubahan preferensi pengguna. Jika preferensi pengguna berubah, rekomendasi mungkin tetap berfokus pada preferensi yang lebih lama.
 Teknik Perhitungan Similarity:
-1. *Cosine Similarity*: *Cosine Similarity* mengukur kesamaan antara dua vektor dengan menghitung kosinus sudut antara vektor-vektor tersebut. Dalam konteks *Content-Based Filtering*, *Cosine Similarity* digunakan untuk mengukur kesamaan antara vektor representasi fitur kursus berdasarkan deskripsi, topik, atau keterampilan. Nilai *Cosine Similarity* berkisar antara -1 hingga 1, di mana nilai 1 menunjukkan kesamaan yang sempurna dan nilai -1 menunjukkan perbedaan yang sempurna.
+Cosine Similarity: Cosine Similarity mengukur kesamaan antara dua vektor dengan menghitung kosinus sudut di antara mereka. Dalam konteks Content-Based Filtering, teknik ini digunakan untuk mengukur kesamaan antara vektor representasi fitur kursus berdasarkan deskripsi, topik, atau keterampilan. Nilai Cosine Similarity berkisar antara -1 hingga 1, di mana 1 menunjukkan kesamaan sempurna dan -1 menunjukkan perbedaan total.
 
-2. **Euclidean Distance**: **Euclidean Distance** mengukur jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content-Based Filtering*, **Euclidean Distance** digunakan untuk mengukur jarak antara vektor representasi fitur kursus. Semakin kecil nilai **Euclidean Distance**, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
+Euclidean Distance: Euclidean Distance mengukur jarak antara dua titik dalam ruang Euclidean. Dalam konteks Content-Based Filtering, teknik ini digunakan untuk mengukur jarak antara vektor representasi fitur kursus. Semakin kecil nilai Euclidean Distance, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
 
-Kedua teknik perhitungan *similarity* tersebut digunakan untuk membandingkan kesamaan antara kursus-kursus dalam sistem rekomendasi. 
+Kedua teknik perhitungan similarity ini digunakan untuk membandingkan kesamaan antara kursus-kursus dalam sistem rekomendasi.
 
 ### Tahapan yang dilakukan dengan pendekatan *Content-Based Filtering*
 Selama pendekatan ini, proses modeling dilakukan berdasar urutan sebagai berikut ini:
